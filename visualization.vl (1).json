@@ -1,45 +1,29 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "He Puna Kounga: Dan Walker's Modern Mana Motuhake",
+  "title": "He Puna Kounga: Dan Walker's Modern Mana Motuhake Quotient",
   "data": {
     "values": [
-      {"category": "Time", "value": 3, "type": "Cultural Intelligence"},
+      {"category": "Time", "value": 3, "type": "Cultural Strength"},
       {"category": "Time", "value": 7, "type": "Colonisation"},
-      {"category": "Culture", "value": 2, "type": "Cultural Intelligence"},
+      {"category": "Culture", "value": 2, "type": "Cultural Strength"},
       {"category": "Culture", "value": 8, "type": "Colonisation"},
-      {"category": "Energy", "value": 5, "type": "Cultural Intelligence"},
+      {"category": "Energy", "value": 5, "type": "Cultural Strength"},
       {"category": "Energy", "value": 5, "type": "Colonisation"},
-      {"category": "Pūtea", "value": 4, "type": "Cultural Intelligence"},
+      {"category": "Pūtea", "value": 4, "type": "Cultural Strength"},
       {"category": "Pūtea", "value": 6, "type": "Colonisation"},
-      {"category": "Mana", "value": 3, "type": "Cultural Intelligence"},
+      {"category": "Mana", "value": 3, "type": "Cultural Strength"},
       {"category": "Mana", "value": 7, "type": "Colonisation"},
-      {
-        "category": "Whanaungatanga",
-        "value": 2,
-        "type": "Cultural Intelligence"
-      },
+      {"category": "Whanaungatanga", "value": 2, "type": "Cultural Strength"},
       {"category": "Whanaungatanga", "value": 8, "type": "Colonisation"},
-      {"category": "Other", "value": 5, "type": "Cultural Intelligence"},
+      {"category": "Other", "value": 5, "type": "Cultural Strength"},
       {"category": "Other", "value": 5, "type": "Colonisation"}
     ]
   },
-  "mark": "bar",
+   "mark": "bar",
   "encoding": {
-    "x": {
-      "field": "category",
-      "type": "nominal",
-      "axis": {"labelAngle": 0, "labelPadding": 10}
-    },
+    "x": {"field": "category", "type": "nominal", "axis": {"labelAngle": 0, "labelPadding": 10}},
     "y": {"field": "value", "type": "quantitative"},
-    "color": {
-      "field": "type",
-      "scale": {
-        "domain": ["Cultural Intelligence", "Colonisation"],
-        "range": ["#1f77b4", "#7f7f7f"]
-      },
-      "legend": {"title": "Type"}
-    }
+    "color": {"field": "type", "scale": {"domain": ["Cultural Strength", "Colonisation"], "range": ["#1f77b4", "#7f7f7f"]}, "legend": {"title": "Type"}}
   },
-  "width": {"step": 60},
-  "config": {}
-}
+  "width": { "step": 60 }
+}   
